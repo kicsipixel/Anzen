@@ -86,18 +86,16 @@
 		5758049F283B78B300027F7E /* Anzen */ = {
 			isa = PBXGroup;
 			children = (
-				575804D9283B994100027F7E /* AnzenButtonStyle.swift */,
-				575804E5283BCDAA00027F7E /* AnzenCancelButtonStyle.swift */,
-				575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */,
+				575804F7283C330F00027F7E /* Constants */,
+				575804F6283C32FE00027F7E /* Extensions */,
+				575804F8283C331E00027F7E /* Modifiers */,
 				575804CA283B89F000027F7E /* Views */,
 				575804A0283B78B300027F7E /* AnzenApp.swift */,
 				575804DB283B9D2600027F7E /* Helper.swift */,
-				575804DD283B9D5D00027F7E /* AnzenErrors.swift */,
+				575804F2283C2D2F00027F7E /* WaveShape.swift */,
 				575804A4283B78B400027F7E /* Assets.xcassets */,
 				575804A9283B78B400027F7E /* Anzen.entitlements */,
 				575804A6283B78B400027F7E /* Preview Content */,
-				575804E1283BCAEE00027F7E /* ColorExtension.swift */,
-				575804F2283C2D2F00027F7E /* WaveShape.swift */,
 			);
 			path = Anzen;
 			sourceTree = "<group>";
@@ -142,6 +140,32 @@
 				575804EA283BEFB100027F7E /* ErrorSheetView.swift */,
 			);
 			path = ErrorSheetViews;
+			sourceTree = "<group>";
+		};
+		575804F6283C32FE00027F7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				575804E1283BCAEE00027F7E /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		575804F7283C330F00027F7E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				575804DD283B9D5D00027F7E /* AnzenErrors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		575804F8283C331E00027F7E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				575804D9283B994100027F7E /* AnzenButtonStyle.swift */,
+				575804E5283BCDAA00027F7E /* AnzenCancelButtonStyle.swift */,
+				575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
