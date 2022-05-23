@@ -12,14 +12,12 @@ struct BackgroundView: View {
     var body: some View {
         content
     }
-    
+
     @ViewBuilder var content: some View {
         ZStack {
-            Color(red: 51/255, green: 51/255, blue: 51/255)
-            RadialGradient(colors: [.black.opacity(0.58), .white.opacity(0.5)],
-                           center: .center,
-                           startRadius: 5,
-                           endRadius: 1000)
+            LinearGradient(colors: [.mountainFig, .closedShutter],
+                           startPoint: .top,
+                           endPoint: .bottom)
         }
     }
 }
