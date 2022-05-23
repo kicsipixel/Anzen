@@ -26,6 +26,8 @@
 		575804EB283BEFB100027F7E /* ErrorSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804EA283BEFB100027F7E /* ErrorSheetView.swift */; };
 		575804ED283BF23200027F7E /* AnzenOkayButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */; };
 		575804EF283C08F900027F7E /* CloseViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804EE283C08F900027F7E /* CloseViewButton.swift */; };
+		575804F1283C25EA00027F7E /* DropZoneImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804F0283C25EA00027F7E /* DropZoneImageView.swift */; };
+		575804F3283C2D2F00027F7E /* WaveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804F2283C2D2F00027F7E /* WaveShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		575804EA283BEFB100027F7E /* ErrorSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSheetView.swift; sourceTree = "<group>"; };
 		575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzenOkayButtonStyle.swift; sourceTree = "<group>"; };
 		575804EE283C08F900027F7E /* CloseViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseViewButton.swift; sourceTree = "<group>"; };
+		575804F0283C25EA00027F7E /* DropZoneImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneImageView.swift; sourceTree = "<group>"; };
+		575804F2283C2D2F00027F7E /* WaveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				575804A9283B78B400027F7E /* Anzen.entitlements */,
 				575804A6283B78B400027F7E /* Preview Content */,
 				575804E1283BCAEE00027F7E /* ColorExtension.swift */,
+				575804F2283C2D2F00027F7E /* WaveShape.swift */,
 			);
 			path = Anzen;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 				575804CB283B89FE00027F7E /* DropZoneView.swift */,
 				575804CD283B8A0800027F7E /* BackgroundView.swift */,
 				575804EE283C08F900027F7E /* CloseViewButton.swift */,
+				575804F0283C25EA00027F7E /* DropZoneImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				575804D6283B963400027F7E /* DialogSheetTextFieldView.swift in Sources */,
+				575804F1283C25EA00027F7E /* DropZoneImageView.swift in Sources */,
 				575804DA283B994100027F7E /* AnzenButtonStyle.swift in Sources */,
 				575804ED283BF23200027F7E /* AnzenOkayButtonStyle.swift in Sources */,
 				575804A3283B78B300027F7E /* ContentView.swift in Sources */,
@@ -222,6 +229,7 @@
 				575804E6283BCDAA00027F7E /* AnzenCancelButtonStyle.swift in Sources */,
 				575804CE283B8A0800027F7E /* BackgroundView.swift in Sources */,
 				575804A1283B78B300027F7E /* AnzenApp.swift in Sources */,
+				575804F3283C2D2F00027F7E /* WaveShape.swift in Sources */,
 				575804EB283BEFB100027F7E /* ErrorSheetView.swift in Sources */,
 				575804D0283B8B9100027F7E /* DialogSheetView.swift in Sources */,
 				575804EF283C08F900027F7E /* CloseViewButton.swift in Sources */,

@@ -29,7 +29,7 @@ struct DropZoneView: View {
 
     @ViewBuilder var content: some View {
         VStack {
-            Image("safeImage")
+            DropZoneImageView()
                 .onDrop(of: [.fileURL, .item], isTargeted: nil, perform: { providers, _ in
                     _ = providers.first!.loadObject(ofClass: NSPasteboard.PasteboardType.self) { pasteboardItem, _ in
 
