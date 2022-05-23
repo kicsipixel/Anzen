@@ -10,8 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        content
+    }
+
+    @ViewBuilder var content: some View {
+        ZStack {
+            BackgroundView()
+            DropZoneView()
+        }
     }
 }
 

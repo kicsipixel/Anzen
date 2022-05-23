@@ -11,6 +11,20 @@
 		575804A3283B78B300027F7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804A2283B78B300027F7E /* ContentView.swift */; };
 		575804A5283B78B400027F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575804A4283B78B400027F7E /* Assets.xcassets */; };
 		575804A8283B78B400027F7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575804A7283B78B400027F7E /* Preview Assets.xcassets */; };
+		575804CC283B89FE00027F7E /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804CB283B89FE00027F7E /* DropZoneView.swift */; };
+		575804CE283B8A0800027F7E /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804CD283B8A0800027F7E /* BackgroundView.swift */; };
+		575804D0283B8B9100027F7E /* DialogSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804CF283B8B9100027F7E /* DialogSheetView.swift */; };
+		575804D6283B963400027F7E /* DialogSheetTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804D5283B963400027F7E /* DialogSheetTextFieldView.swift */; };
+		575804D8283B974D00027F7E /* DialogSheetTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804D7283B974D00027F7E /* DialogSheetTitleTextView.swift */; };
+		575804DA283B994100027F7E /* AnzenButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804D9283B994100027F7E /* AnzenButtonStyle.swift */; };
+		575804DC283B9D2600027F7E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804DB283B9D2600027F7E /* Helper.swift */; };
+		575804DE283B9D5D00027F7E /* AnzenErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804DD283B9D5D00027F7E /* AnzenErrors.swift */; };
+		575804E0283BA3DE00027F7E /* DialogSheetErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804DF283BA3DE00027F7E /* DialogSheetErrorView.swift */; };
+		575804E2283BCAEE00027F7E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804E1283BCAEE00027F7E /* ColorExtension.swift */; };
+		575804E4283BCC8700027F7E /* DialogSheetCancelButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804E3283BCC8700027F7E /* DialogSheetCancelButtonView.swift */; };
+		575804E6283BCDAA00027F7E /* AnzenCancelButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804E5283BCDAA00027F7E /* AnzenCancelButtonStyle.swift */; };
+		575804EB283BEFB100027F7E /* ErrorSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804EA283BEFB100027F7E /* ErrorSheetView.swift */; };
+		575804ED283BF23200027F7E /* AnzenOkayButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +34,20 @@
 		575804A4283B78B400027F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		575804A7283B78B400027F7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		575804A9283B78B400027F7E /* Anzen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Anzen.entitlements; sourceTree = "<group>"; };
+		575804CB283B89FE00027F7E /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		575804CD283B8A0800027F7E /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		575804CF283B8B9100027F7E /* DialogSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSheetView.swift; sourceTree = "<group>"; };
+		575804D5283B963400027F7E /* DialogSheetTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSheetTextFieldView.swift; sourceTree = "<group>"; };
+		575804D7283B974D00027F7E /* DialogSheetTitleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSheetTitleTextView.swift; sourceTree = "<group>"; };
+		575804D9283B994100027F7E /* AnzenButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzenButtonStyle.swift; sourceTree = "<group>"; };
+		575804DB283B9D2600027F7E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		575804DD283B9D5D00027F7E /* AnzenErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzenErrors.swift; sourceTree = "<group>"; };
+		575804DF283BA3DE00027F7E /* DialogSheetErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSheetErrorView.swift; sourceTree = "<group>"; };
+		575804E1283BCAEE00027F7E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		575804E3283BCC8700027F7E /* DialogSheetCancelButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogSheetCancelButtonView.swift; sourceTree = "<group>"; };
+		575804E5283BCDAA00027F7E /* AnzenCancelButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzenCancelButtonStyle.swift; sourceTree = "<group>"; };
+		575804EA283BEFB100027F7E /* ErrorSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSheetView.swift; sourceTree = "<group>"; };
+		575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzenOkayButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +80,17 @@
 		5758049F283B78B300027F7E /* Anzen */ = {
 			isa = PBXGroup;
 			children = (
+				575804D9283B994100027F7E /* AnzenButtonStyle.swift */,
+				575804E5283BCDAA00027F7E /* AnzenCancelButtonStyle.swift */,
+				575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */,
+				575804CA283B89F000027F7E /* Views */,
 				575804A0283B78B300027F7E /* AnzenApp.swift */,
-				575804A2283B78B300027F7E /* ContentView.swift */,
+				575804DB283B9D2600027F7E /* Helper.swift */,
+				575804DD283B9D5D00027F7E /* AnzenErrors.swift */,
 				575804A4283B78B400027F7E /* Assets.xcassets */,
 				575804A9283B78B400027F7E /* Anzen.entitlements */,
 				575804A6283B78B400027F7E /* Preview Content */,
+				575804E1283BCAEE00027F7E /* ColorExtension.swift */,
 			);
 			path = Anzen;
 			sourceTree = "<group>";
@@ -67,6 +101,38 @@
 				575804A7283B78B400027F7E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		575804CA283B89F000027F7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				575804E9283BEF9F00027F7E /* ErrorSheetViews */,
+				575804D4283B960F00027F7E /* DialogSheetViews */,
+				575804A2283B78B300027F7E /* ContentView.swift */,
+				575804CB283B89FE00027F7E /* DropZoneView.swift */,
+				575804CD283B8A0800027F7E /* BackgroundView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		575804D4283B960F00027F7E /* DialogSheetViews */ = {
+			isa = PBXGroup;
+			children = (
+				575804CF283B8B9100027F7E /* DialogSheetView.swift */,
+				575804D5283B963400027F7E /* DialogSheetTextFieldView.swift */,
+				575804D7283B974D00027F7E /* DialogSheetTitleTextView.swift */,
+				575804DF283BA3DE00027F7E /* DialogSheetErrorView.swift */,
+				575804E3283BCC8700027F7E /* DialogSheetCancelButtonView.swift */,
+			);
+			path = DialogSheetViews;
+			sourceTree = "<group>";
+		};
+		575804E9283BEF9F00027F7E /* ErrorSheetViews */ = {
+			isa = PBXGroup;
+			children = (
+				575804EA283BEFB100027F7E /* ErrorSheetView.swift */,
+			);
+			path = ErrorSheetViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +205,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575804D6283B963400027F7E /* DialogSheetTextFieldView.swift in Sources */,
+				575804DA283B994100027F7E /* AnzenButtonStyle.swift in Sources */,
+				575804ED283BF23200027F7E /* AnzenOkayButtonStyle.swift in Sources */,
 				575804A3283B78B300027F7E /* ContentView.swift in Sources */,
+				575804E2283BCAEE00027F7E /* ColorExtension.swift in Sources */,
+				575804DE283B9D5D00027F7E /* AnzenErrors.swift in Sources */,
+				575804E4283BCC8700027F7E /* DialogSheetCancelButtonView.swift in Sources */,
+				575804CC283B89FE00027F7E /* DropZoneView.swift in Sources */,
+				575804E0283BA3DE00027F7E /* DialogSheetErrorView.swift in Sources */,
+				575804D8283B974D00027F7E /* DialogSheetTitleTextView.swift in Sources */,
+				575804DC283B9D2600027F7E /* Helper.swift in Sources */,
+				575804E6283BCDAA00027F7E /* AnzenCancelButtonStyle.swift in Sources */,
+				575804CE283B8A0800027F7E /* BackgroundView.swift in Sources */,
 				575804A1283B78B300027F7E /* AnzenApp.swift in Sources */,
+				575804EB283BEFB100027F7E /* ErrorSheetView.swift in Sources */,
+				575804D0283B8B9100027F7E /* DialogSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
