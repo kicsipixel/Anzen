@@ -25,6 +25,7 @@
 		575804E6283BCDAA00027F7E /* AnzenCancelButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804E5283BCDAA00027F7E /* AnzenCancelButtonStyle.swift */; };
 		575804EB283BEFB100027F7E /* ErrorSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804EA283BEFB100027F7E /* ErrorSheetView.swift */; };
 		575804ED283BF23200027F7E /* AnzenOkayButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */; };
+		575804EF283C08F900027F7E /* CloseViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575804EE283C08F900027F7E /* CloseViewButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		575804E5283BCDAA00027F7E /* AnzenCancelButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzenCancelButtonStyle.swift; sourceTree = "<group>"; };
 		575804EA283BEFB100027F7E /* ErrorSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSheetView.swift; sourceTree = "<group>"; };
 		575804EC283BF23200027F7E /* AnzenOkayButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnzenOkayButtonStyle.swift; sourceTree = "<group>"; };
+		575804EE283C08F900027F7E /* CloseViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseViewButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				575804A2283B78B300027F7E /* ContentView.swift */,
 				575804CB283B89FE00027F7E /* DropZoneView.swift */,
 				575804CD283B8A0800027F7E /* BackgroundView.swift */,
+				575804EE283C08F900027F7E /* CloseViewButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				575804A1283B78B300027F7E /* AnzenApp.swift in Sources */,
 				575804EB283BEFB100027F7E /* ErrorSheetView.swift in Sources */,
 				575804D0283B8B9100027F7E /* DialogSheetView.swift in Sources */,
+				575804EF283C08F900027F7E /* CloseViewButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

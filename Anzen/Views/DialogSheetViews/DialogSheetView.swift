@@ -34,11 +34,16 @@ struct DialogSheetView: View {
 
             VStack(spacing: 30) {
                 VStack(alignment: .leading, spacing: 5) {
+                    CloseViewButton()
+                        .padding(.top, 20)
+                        .padding(.leading, 15)
+                    Spacer()
                     DialogSheetTitleTextView(willEncrypt: willEncrypt)
                     DialogSheetTextFieldView(passwordForKey: $passwordForKey)
                     // Show if the error message if password lenght is 0
                     DialogSheetErrorView()
                         .opacity(passwordForKey.count == 0 ? 1 : 0)
+                    Spacer()
                 }
 
                 HStack {
@@ -82,7 +87,9 @@ struct DialogSheetView: View {
                         .modifier(AnzenCancelButtonStyle())
                 }
                 .padding(.horizontal, 50)
+                Spacer()
             }
+
         }
     }
 }
