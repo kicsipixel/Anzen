@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum AnzenErrors: Swift.Error {
+enum AnzenErrors: Error {
     case unableToCreateDecodeStream
     case unableToGetHeaderField
     case zeroDataSize
