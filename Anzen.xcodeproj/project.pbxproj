@@ -90,14 +90,13 @@
 		5758049F283B78B300027F7E /* Anzen */ = {
 			isa = PBXGroup;
 			children = (
-				575804F9283D25CB00027F7E /* ViewModels */,
 				575804F7283C330F00027F7E /* Constants */,
 				575804F6283C32FE00027F7E /* Extensions */,
 				575804F8283C331E00027F7E /* Modifiers */,
+				575804FE283D378C00027F7E /* Utilities */,
 				575804CA283B89F000027F7E /* Views */,
+				575804F9283D25CB00027F7E /* ViewModels */,
 				575804A0283B78B300027F7E /* AnzenApp.swift */,
-				575804DB283B9D2600027F7E /* Helper.swift */,
-				575804F2283C2D2F00027F7E /* WaveShape.swift */,
 				575804A4283B78B400027F7E /* Assets.xcassets */,
 				575804A9283B78B400027F7E /* Anzen.entitlements */,
 				575804A6283B78B400027F7E /* Preview Content */,
@@ -180,6 +179,15 @@
 				575804FA283D25EB00027F7E /* AnzenSettings.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		575804FE283D378C00027F7E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				575804DB283B9D2600027F7E /* Helper.swift */,
+				575804F2283C2D2F00027F7E /* WaveShape.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
