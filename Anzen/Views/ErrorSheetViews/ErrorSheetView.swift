@@ -29,6 +29,7 @@ struct ErrorSheetView: View {
 
             Text("\(errorMessage)")
                 .lineLimit(.none)
+                .multilineTextAlignment(.center)
                 .padding(.horizontal, 10)
 
             Button {
