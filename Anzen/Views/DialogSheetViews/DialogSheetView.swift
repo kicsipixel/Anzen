@@ -12,12 +12,10 @@ import System
 struct DialogSheetView: View {
 
     @Environment(\.dismiss) private var dismiss
-    @Binding var passwordForKey: String
+    @EnvironmentObject var anzenSettings: AnzenSettings
+    @State var passwordForKey: String = ""
     @State private var showingErrorSheet = false
     @State private var errorMessage: String = ""
-    let willEncrypt: Bool
-    let sourceFilePath: FilePath
-    let destinationFilePath: FilePath
 
     var body: some View {
         content
@@ -34,12 +32,20 @@ struct DialogSheetView: View {
 
             VStack(spacing: 30) {
                 VStack(alignment: .leading, spacing: 5) {
+                    // Close button view on top left corner
                     CloseViewButton()
                         .padding(.top, 20)
                         .padding(.leading, 15)
+
                     Spacer()
-                    DialogSheetTitleTextView(willEncrypt: willEncrypt)
+
+                    // Message depending on encrypt or decrypt
+                    DialogSheetTitleTextView()
+                        .environmentObject(anzenSettings)
+
+                    // Password secure text field
                     DialogSheetTextFieldView(passwordForKey: $passwordForKey)
+
                     // Show if the error message if password lenght is 0
                     DialogSheetErrorView()
                         .opacity(passwordForKey.count == 0 ? 1 : 0)
@@ -47,38 +53,12 @@ struct DialogSheetView: View {
                 }
 
                 HStack {
-                    Button {
-                        if willEncrypt {
-                            do {
-                                try encryptFile(key: keyFromPassword(passwordForKey),
-                                                sourceFilePath: sourceFilePath,
-                                                destinationFilePath: destinationFilePath)
-                            } catch {
-                                errorMessage = error.localizedDescription
-                                showingErrorSheet.toggle()
-                                return
-                            }
-                        } else {
-                            do {
-                                try decryptFile(key: keyFromPassword(passwordForKey),
-                                                sourceFilePath: sourceFilePath,
-                                                destinationFilePath: destinationFilePath)
-                            } catch {
-                                errorMessage = error.localizedDescription
-                                showingErrorSheet.toggle()
-                                return
-                            }
-                        }
-                        // Clear text field value
-                        passwordForKey = ""
-                        dismiss.callAsFunction()
-                    } label: {
-                        Text(willEncrypt ? "Encrypt" : "Decrypt")
-                            .foregroundColor(.mountainFig)
-                    }
-                    // If there is no password, no party
-                    .disabled(passwordForKey.count == 0 ? true : false)
-                    .modifier(AnzenButtonStyle())
+                    // Encrypt or decrypt button
+                    DialogSheetEncryptButtonView(errorMessage: $errorMessage,
+                                                 showingErrorSheet: $showingErrorSheet,
+                                                 passwordForKey: $passwordForKey)
+                        .disabled(passwordForKey.count == 0 ? true : false)  // If there is no password, no party
+                        .modifier(AnzenButtonStyle())
 
                     Spacer()
 
@@ -96,9 +76,6 @@ struct DialogSheetView: View {
 
 struct DialogSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        DialogSheetView(passwordForKey: .constant(""),
-                        willEncrypt: true,
-                        sourceFilePath: FilePath(),
-                        destinationFilePath: FilePath())
+        DialogSheetView()
     }
 }

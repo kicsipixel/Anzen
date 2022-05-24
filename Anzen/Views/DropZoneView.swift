@@ -12,18 +12,17 @@ import SwiftUI
 struct DropZoneView: View {
 
     @State private var showingDialogSheet = false
-    @State private var passwordForKey = ""
     @State private var willEncrypt = true
     @State private var sourceFilePath = FilePath()
     @State private var destinationFilePath = FilePath()
+    @StateObject var anzenSettings = AnzenSettings()
+    var urlsForFileParth: [URL] = []
 
     var body: some View {
         content
             .sheet(isPresented: $showingDialogSheet) {
-                DialogSheetView(passwordForKey: $passwordForKey,
-                                willEncrypt: willEncrypt,
-                                sourceFilePath: sourceFilePath,
-                                destinationFilePath: destinationFilePath)
+                DialogSheetView()
+                    .environmentObject(anzenSettings)
             }
     }
 
@@ -37,24 +36,8 @@ struct DropZoneView: View {
                             return
                         }
 
-                        if let sourceFileURL = URL(string: pasteboardItem.rawValue) {
-                            sourceFilePath = FilePath(sourceFileURL.path)
-                        }
-
-                        if sourceFilePath.extension == "encrypt" {
-                            willEncrypt.toggle()
-                            // We need to remove the .encrypt but it seems to be super complex...
-                            if let destinationFileURLNoExtension = URL(string: pasteboardItem.rawValue) {
-                                let  newDestibnationFileULR = destinationFileURLNoExtension
-                                if let destionationFileURL = URL(string: "\(newDestibnationFileULR.deletingPathExtension())") {
-                                    destinationFilePath = FilePath(destionationFileURL.path)
-                                }
-                            }
-                        } else {
-                            if let destionationFileURL = URL(string: "\(URL(string: pasteboardItem.rawValue)!).encrypt") {
-                                destinationFilePath = FilePath(destionationFileURL.path)
-                            }
-                        }
+                        // Let's process the dropped file
+                        anzenSettings.convertUrlToFilePath(pasteboardItem.rawValue)
                     }
                     showingDialogSheet.toggle()
                     return true

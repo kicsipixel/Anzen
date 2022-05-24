@@ -17,7 +17,7 @@ struct DialogSheetTextFieldView: View {
     }
 
     @ViewBuilder var content: some View {
-        TextField("Your secret password here...", text: $passwordForKey)
+        SecureField("Your secret password here...", text: $passwordForKey)
             .font(.title2)
             .foregroundColor(.mountainFig)
             .padding(.leading, 25)
